@@ -172,22 +172,17 @@ function updateSummary(){
  document.getElementById('summary').innerHTML=html;
 }
 async function saveReservationOnline(f,d){
-  if(!window.SUPABASE_URL || !window.SUPABASE_PUBLISHABLE_KEY) return {ok:false,error:new Error('Supabase no configurado')};
-  const type=f.split(' · ')[0], match=f.match(/Campo (\d+)/), number=match?Number(match[1]):NaN;
-  if(!type || !Number.isFinite(number)) return {ok:false,error:new Error('No se pudo identificar el campo seleccionado')};
-  const rows=selectedSlots.map(slot=>({customer_name:'Reserva web',customer_phone:'953813533',field_type:type,field_number:number,reservation_date:d,start_time:slot.split(' - ')[0]+':00',end_time:slot.split(' - ')[1]+':00',status:'pending'}));
-  const url=window.SUPABASE_URL+'/rest/v1/reservations';
-  try{
-    const response=await fetch(url,{method:'POST',headers:{'apikey':window.SUPABASE_PUBLISHABLE_KEY,'Authorization':'Bearer '+window.SUPABASE_PUBLISHABLE_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(rows)});
-    if(!response.ok){
-      let detail='HTTP '+response.status;
-      try{const body=await response.json();detail=body.message||body.details||body.hint||detail;}catch(e){}
-      return {ok:false,error:new Error(detail)};
-    }
-    return {ok:true,error:null};
-  }catch(e){
-    return {ok:false,error:new Error('No se pudo conectar con Supabase. Revisa tu conexión o vuelve a cargar la página.')};
-  }
+ if(!supabaseClient)return {ok:false,error:new Error('Supabase no configurado')};
+ const type=f.split(' · ')[0], match=f.match(/Campo (\d+)/), number=match?Number(match[1]):NaN;
+ if(!type || !Number.isFinite(number)) return {ok:false,error:new Error('No se pudo identificar el campo seleccionado')};
+ const rows=selectedSlots.map(slot=>({customer_name:'Reserva web',customer_phone:'953813533',field_type:type,field_number:number,reservation_date:d,start_time:slot.split(' - ')[0]+':00',end_time:slot.split(' - ')[1]+':00',status:'pending'}));
+ // Guardamos los bloques uno por uno. Así, si un bloque falla, podemos informar
+ // exactamente cuál fue rechazado y evitamos errores ambiguos en inserciones múltiples.
+ for(const row of rows){
+   const {error}=await supabaseClient.from('reservations').insert(row);
+   if(error) return {ok:false,error,row};
+ }
+ return {ok:true,error:null};
 }
 function saveLocalReservation(f,d){const bookings=getLocalBookings(),key=`${d}__${f}`;bookings[key]=bookings[key]||[];selectedSlots.forEach(slot=>{if(!bookings[key].includes(slot))bookings[key].push(slot)});localStorage.setItem(STORAGE_KEY,JSON.stringify(bookings));}
 async function reserveWhatsApp(){
