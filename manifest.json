@@ -1,0 +1,26 @@
+{
+  "name": "Campo Deportivo Túpac Amaru",
+  "short_name": "Túpac Amaru",
+  "description": "Reserva canchas de Fútbol 7, Fútbol 9 y Fútbol 11.",
+  "lang": "es-PE",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#03130e",
+  "theme_color": "#03130e",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

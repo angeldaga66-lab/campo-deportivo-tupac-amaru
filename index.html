@@ -3,7 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Campo Deportivo Túpac Amaru</title>
+<meta name="theme-color" content="#03130e">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Túpac Amaru">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>Campo Deportivo Túpac Amaru | Alquiler de canchas en Villa María del Triunfo</title>
+<meta name="description" content="Campo Deportivo Túpac Amaru en Villa María del Triunfo. Reserva canchas de Fútbol 7, Fútbol 9 y Fútbol 11 para partidos, campeonatos y eventos.">
 <meta name="description" content="Campo Deportivo Túpac Amaru — fútbol 7, 9 y 11. Reserva tu cancha.">
 <style>
 :root{--green:#00c96b;--green2:#008f4b;--dark:#03130e;--dark2:#061f17;--ink:#10231c;--red:#ef233c;--white:#fff;--muted:#718078;--line:#dfe8e3}
@@ -63,14 +72,14 @@ footer{background:#020b08;color:#fff;padding:42px 0}.footer-grid{display:flex;ju
 
 <section><div class="container"><div class="section-head"><div><div class="section-kicker">GALERÍA</div><h2>Conoce nuestras instalaciones</h2></div></div><div class="gallery"><img src="photos/field_c.jpg" alt="Cancha Túpac Amaru"><img src="photos/field_a.jpg" alt="Cancha Túpac Amaru"><img src="photos/field_b.jpg" alt="Cancha Túpac Amaru"><img src="photos/field_e.jpg" alt="Cancha Túpac Amaru"><img src="photos/field_f.jpg" alt="Cancha Túpac Amaru"></div></div></section>
 
-<section id="contacto" style="padding-top:20px"><div class="container"><div class="info-grid"><div class="info"><h3>📍 Ubicación</h3><p>Agregaremos aquí la dirección exacta y el enlace de Google Maps.</p><div class="map"></div></div><div class="info"><h3>📲 Reservas</h3><p>WhatsApp: <strong>953 813 533</strong></p><p>El botón enviará automáticamente el resumen de la reserva por WhatsApp.</p><a class="btn" href="#reserva">Ir a reservar</a></div><div class="info"><h3>📣 Redes sociales</h3><p>Facebook: Campo Deportivo Túpac Amaru.</p><p>Podemos añadir Instagram, TikTok y otros enlaces.</p></div></div></div></section>
+<section id="contacto" style="padding-top:20px"><div class="container"><div class="info-grid"><div class="info"><h3>📍 Ubicación</h3><p>Estadio Túpac Amaru – Villa María del Triunfo</p><a class="btn" href="https://www.google.com/maps/place/Estadio+T%C3%BApac+Amaru+villa+Mar%C3%ADa+del+triunfo/@-12.1677792,-76.953926,18.83z/data=!4m6!3m5!1s0x9105b90043592d77:0x1321fb3b9038b1f4!8m2!3d-12.1677541!4d-76.9543808!16s%2Fg%2F11zhblq029?entry=ttu" target="_blank" rel="noopener">🗺️ Cómo llegar</a></div><div class="info"><h3>📲 Reservas</h3><p>WhatsApp: <strong>953 813 533</strong></p><p>El botón enviará automáticamente el resumen de la reserva por WhatsApp.</p><a class="btn" href="#reserva">Ir a reservar</a></div><div class="info"><h3>📣 Redes sociales</h3><p>Facebook: Campo Deportivo Túpac Amaru.</p><a class="btn" href="https://www.facebook.com/share/1Uw6QAqgYe/" target="_blank" rel="noopener">📘 Ver Facebook</a></div></div></div></section>
 </main>
 <footer><div class="container footer-grid"><div class="footer-brand"><img src="logo.png" alt="Logo"><span>Campo Deportivo Túpac Amaru<br><span class="muted">Deporte · Pasión · Comunidad</span></span></div><div class="muted">© <span id="year"></span> Campo Deportivo Túpac Amaru. Todos los derechos reservados.</div></div></footer>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="supabase-config.js"></script>
 <script>
 const WHATSAPP='51953813533';
-const slots=['06:00 - 06:30','06:30 - 07:00','07:00 - 07:30','07:30 - 08:00','08:00 - 08:30','08:30 - 09:00','09:00 - 09:30','09:30 - 10:00','10:00 - 10:30','10:30 - 11:00','11:00 - 11:30','11:30 - 12:00','12:00 - 12:30','12:30 - 13:00','13:00 - 13:30','13:30 - 14:00','14:00 - 14:30','14:30 - 15:00','15:00 - 15:30','15:30 - 16:00','16:00 - 16:30','16:30 - 17:00','17:00 - 17:30','17:30 - 18:00','18:00 - 18:30','18:30 - 19:00','19:00 - 19:30','19:30 - 20:00','20:00 - 20:30','20:30 - 21:00','21:00 - 21:30','21:30 - 22:00','22:00 - 22:30','22:30 - 23:00'];
+const slots=['06:00 - 06:30','06:30 - 07:00','07:00 - 07:30','07:30 - 08:00','08:00 - 08:30','08:30 - 09:00','09:00 - 09:30','09:30 - 10:00','10:00 - 10:30','10:30 - 11:00','11:00 - 11:30','11:30 - 12:00','12:00 - 12:30','12:30 - 13:00','13:00 - 13:30','13:30 - 14:00','14:00 - 14:30','14:30 - 15:00','15:00 - 15:30','15:30 - 16:00','16:00 - 16:30','16:30 - 17:00','17:00 - 17:30','17:30 - 18:00','18:00 - 18:30','18:30 - 19:00','19:00 - 19:30','19:30 - 20:00','20:00 - 20:30','20:30 - 21:00','21:00 - 21:30','21:30 - 22:00','22:00 - 22:30','22:30 - 23:00','23:00 - 23:30','23:30 - 00:00','23:00 - 23:30','23:30 - 00:00'];
 let selectedSlots=[];
 let onlineBookings=[];
 const STORAGE_KEY='tupac_amaru_reservas_v2';
@@ -108,15 +117,18 @@ async function loadOnlineBookings(){
   onlineBookings=data||[];
   renderTimes();
 }
+function reservationEndMinutes(r){
+  const start=timeToMinutes(r.start_time), end=timeToMinutes(r.end_time);
+  return end===0 && start>0 ? 1440 : end;
+}
 function isOnlineOccupiedForField(slot, f){
-  const start=slotStart(slot), end=slotEnd(slot);
+  const start=slotStart(slot), end=slotEnd(slot) || 1440;
   return onlineBookings.some(r=>{
     if(r.status==='cancelled') return false;
     const rf=normalizeField(r.field_type,r.field_number);
     if(!conflictsForField(f).includes(rf)) return false;
-    return timeToMinutes(r.start_time)>=start && timeToMinutes(r.start_time)<end
-      || timeToMinutes(r.end_time)>start && timeToMinutes(r.end_time)<=end
-      || (timeToMinutes(r.start_time)<=start && timeToMinutes(r.end_time)>=end);
+    const rs=timeToMinutes(r.start_time), re=reservationEndMinutes(r);
+    return rs<end && re>start;
   });
 }
 function isLocalOccupied(slot,f){
@@ -175,7 +187,7 @@ async function saveReservationOnline(f,d){
  if(!supabaseClient)return {ok:false,error:new Error('Supabase no configurado')};
  const type=f.split(' · ')[0], match=f.match(/Campo (\d+)/), number=match?Number(match[1]):NaN;
  if(!type || !Number.isFinite(number)) return {ok:false,error:new Error('No se pudo identificar el campo seleccionado')};
- const rows=selectedSlots.map(slot=>({customer_name:'Reserva web',customer_phone:'953813533',field_type:type,field_number:number,reservation_date:d,start_time:slot.split(' - ')[0]+':00',end_time:slot.split(' - ')[1]+':00',status:'pending'}));
+ const rows=selectedSlots.map(slot=>({customer_name:'Reserva web',customer_phone:'953813533',field_type:type,field_number:number,reservation_date:d,start_time:slot.split(' - ')[0]+':00',end_time:(slot.split(' - ')[1]==='00:00'?'23:59:59':slot.split(' - ')[1]+':00'),status:'pending'}));
  // Guardamos los bloques uno por uno. Así, si un bloque falla, podemos informar
  // exactamente cuál fue rechazado y evitamos errores ambiguos en inserciones múltiples.
  for(const row of rows){
@@ -209,5 +221,11 @@ async function reserveWhatsApp(){
  document.getElementById('confirmType').textContent=type;document.getElementById('confirmDate').textContent=dateLabel;document.getElementById('confirmTime').textContent=`${range} (${durationLabel})`;document.getElementById('confirmation').classList.add('show');await loadOnlineBookings();
 }
 document.getElementById('date').addEventListener('change',()=>{selectedSlots=[];loadOnlineBookings()});document.getElementById('field').addEventListener('change',()=>{selectedSlots=[];loadOnlineBookings()});document.getElementById('year').textContent=new Date().getFullYear();loadOnlineBookings();
+</script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
+}
 </script>
 </body></html>
