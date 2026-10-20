@@ -3,8 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Campo Deportivo Túpac Amaru</title>
-<meta name="description" content="Campo Deportivo Túpac Amaru — fútbol 7, 9 y 11. Reserva tu cancha.">
+<meta name="theme-color" content="#03130e">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Túpac Amaru">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>Campo Deportivo Túpac Amaru | Alquiler de canchas en Villa María del Triunfo</title>
+<meta name="description" content="Campo Deportivo Túpac Amaru en Villa María del Triunfo. Reserva canchas de Fútbol 7, Fútbol 9 y Fútbol 11 para partidos, campeonatos y eventos.">
 <style>
 :root{--green:#00c96b;--green2:#008f4b;--dark:#03130e;--dark2:#061f17;--ink:#10231c;--red:#ef233c;--white:#fff;--muted:#718078;--line:#dfe8e3}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:#f7faf8}a{text-decoration:none;color:inherit}.container{width:min(1240px,92%);margin:auto}
@@ -20,20 +28,21 @@ section{padding:76px 0}.section-head{display:flex;justify-content:space-between;
 footer{background:#020b08;color:#fff;padding:42px 0}.footer-grid{display:flex;justify-content:space-between;gap:25px;align-items:center}.footer-brand{display:flex;align-items:center;gap:12px;font-weight:900}.footer-brand img{width:48px}.muted{color:#8ea098;font-size:12px}
 @media(max-width:1050px){.navlinks{gap:15px}.fields-wrap{grid-template-columns:1fr}.booking-card{position:relative;top:0}.fields{grid-template-columns:repeat(3,1fr)}.feature-grid{grid-template-columns:repeat(3,1fr)}.feature{border-bottom:1px solid rgba(255,255,255,.12)}}
 @media(max-width:760px){.navlinks{display:none}.menu{display:block}.nav{height:68px}.brand img{width:50px;height:50px}.brand strong{font-size:15px}.hero{min-height:620px;background-position:60% center}.hero-inner{padding:70px 0}.hero h1{font-size:52px}.section-head{display:block}.section-head h2{font-size:32px}.fields{grid-template-columns:1fr 1fr}.field-card img{height:125px}.about-grid,.info-grid{grid-template-columns:1fr}.about-photo{height:270px}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.gallery img:first-child{grid-row:span 1}.feature-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{align-items:flex-start;flex-direction:column}}
+@media(max-width:760px){.navlinks.open{display:flex;flex-direction:column;align-items:flex-start;position:absolute;top:100%;left:0;right:0;background:#03130e;padding:14px 4% 20px;gap:4px;border-bottom:1px solid rgba(255,255,255,.1)}.navlinks.open a{padding:10px 0;font-size:16px}}
 @media(max-width:460px){.fields{grid-template-columns:1fr}.hero h1{font-size:45px}.hero p{font-size:16px}.feature-grid{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr}.gallery img{height:190px}}
 </style>
 </head>
 <body>
 <header><div class="container nav">
 <a class="brand" href="#inicio"><img src="logo.png" alt="Logo Campo Deportivo Túpac Amaru"><span><small>CAMPO DEPORTIVO</small><strong>TÚPAC AMARU</strong></span></a>
-<nav class="navlinks"><a href="#canchas">Nuestras canchas</a><a href="#reserva">Reservas</a><a href="#precios">Precios</a><a href="#horarios">Horarios</a><a href="#eventos">Eventos</a><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a><a class="btn" href="https://wa.me/51953813533?text=Hola,%20quiero%20consultar%20sobre%20una%20reserva%20en%20Campo%20Deportivo%20T%C3%BApac%20Amaru." target="_blank" rel="noopener">WhatsApp</a></nav><button class="menu" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button>
+<nav class="navlinks"><a href="#canchas">Nuestras canchas</a><a href="#reserva">Reservas</a><a href="#precios">Precios</a><a href="#horarios">Horarios</a><a href="#eventos">Eventos</a><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a><a class="btn" href="https://wa.me/51953813533?text=Hola,%20quiero%20consultar%20sobre%20una%20reserva%20en%20Campo%20Deportivo%20T%C3%BApac%20Amaru." target="_blank" rel="noopener">WhatsApp</a></nav><button class="menu" aria-label="Abrir menú" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button>
 </div></header>
 <main>
 <section class="hero" id="inicio"><div class="container hero-inner"><div class="eyebrow">DEPORTE • PASIÓN • COMUNIDAD</div><h1>Campo Deportivo<br>Túpac Amaru</h1><p>Un espacio para disfrutar del fútbol, competir y compartir con tu equipo. Contamos con 7 campos para diferentes modalidades.</p><div class="hero-actions"><a class="btn" href="#reserva">⚽ Reserva tu cancha</a><a class="btn light" href="#canchas">Ver canchas</a></div><div class="hero-note">Fútbol 7 · Fútbol 9 · Fútbol 11</div></div></section>
 
 <section id="precios"><div class="container"><div class="section-head"><div><div class="section-kicker">PRECIOS</div><h2>Tarifas por hora</h2><p>El precio se cobra según la duración de la reserva. Los horarios se seleccionan en bloques de 30 minutos, pero no existe una tarifa independiente de 30 minutos.</p></div></div><div class="info-grid"><div class="info"><h3>☀️ Campo de día</h3><p>Fútbol 7 — <strong>S/ 70 por hora</strong><br>Fútbol 9 — <strong>S/ 140 por hora</strong><br>Fútbol 11 — <strong>S/ 280 por hora</strong></p></div><div class="info"><h3>🌙 Campo de noche</h3><p>Fútbol 7 — <strong>S/ 80 por hora</strong><br>Fútbol 9 — <strong>S/ 160 por hora</strong><br>Fútbol 11 — <strong>S/ 320 por hora</strong></p></div><div class="info"><h3>🔥 Promoción de lunes</h3><p><strong>S/ 10 de descuento por cada hora</strong> en cualquier modalidad. Válido únicamente los lunes.</p></div></div></div></section>
 
-<section id="canchas"><div class="container"><div class="section-head"><div><div class="section-kicker">NUESTRAS INSTALACIONES</div><h2>7 campos para tu partido</h2><p>Fotos reales del Campo Deportivo Túpac Amaru, tomadas de las imágenes que nos enviaste.</p></div></div>
+<section id="canchas"><div class="container"><div class="section-head"><div><div class="section-kicker">NUESTRAS INSTALACIONES</div><h2>7 campos para tu partido</h2><p>Fotos reales del Campo Deportivo Túpac Amaru.</p></div></div>
 <div class="fields-wrap"><div class="fields">
 <div class="type-title">⚽ FÚTBOL 7 · 4 CAMPOS</div>
 <article class="field-card"><img src="photos/field_a.jpg" alt="Campo Deportivo Túpac Amaru"><div class="field-body"><h3>Campo 1</h3><p>Fútbol 7</p><a class="btn" href="#reserva" onclick="pickField('Fútbol 7 · Campo 1')">Reservar</a></div></article>
@@ -49,28 +58,28 @@ footer{background:#020b08;color:#fff;padding:42px 0}.footer-grid{display:flex;ju
 <aside class="booking-card" id="reserva"><h3>Reserva tu cancha</h3><p>Elige modalidad, campo, fecha y horario. Los horarios disponibles aparecen aquí en bloques de 30 minutos.</p><div class="steps"><div class="step"><b>1</b><span>Selecciona tu campo</span></div><div class="step"><b>2</b><span>Elige fecha y hora</span></div><div class="step"><b>3</b><span>Confirma por WhatsApp</span></div></div>
 <label>Cancha</label><select id="field"><option>Fútbol 7 · Campo 1</option><option>Fútbol 7 · Campo 2</option><option>Fútbol 7 · Campo 3</option><option>Fútbol 7 · Campo 4</option><option>Fútbol 9 · Campo 5</option><option>Fútbol 9 · Campo 6</option><option>Fútbol 11 · Campo 7</option></select>
 <label>Fecha</label><input id="date" type="date">
-<label>Horario</label><div class="time-grid" id="times"></div><div class="availability-note">Selecciona bloques de 30 minutos para armar tu horario. La reserva mínima es de 1 hora; no existe tarifa de 30 minutos.</div><div class="summary" id="summary">Selecciona una fecha y horario para ver el resumen.</div>
+<label>Horario</label><div class="time-grid" id="times"></div><div class="availability-note">Horario de reservas: de 06:00 a 00:00 horas. Selecciona bloques de 30 minutos para armar tu horario. La reserva mínima es de 1 hora; no existe tarifa de 30 minutos.</div><div class="summary" id="summary">Selecciona una fecha y horario para ver el resumen.</div>
 <button class="btn" onclick="reserveWhatsApp()">Reservar por WhatsApp →</button><div class="confirmation" id="confirmation"><h4>✅ Reserva enviada</h4><p><strong>Tipo de campo:</strong> <span id="confirmType"></span></p><p><strong>Fecha:</strong> <span id="confirmDate"></span></p><p><strong>Hora:</strong> <span id="confirmTime"></span></p><p>WhatsApp se abrió con los datos de tu reserva. Espera la confirmación del administrador.</p></div>
 </aside></div></div></section>
 
 <div class="band" id="servicios"><div class="container feature-grid"><div class="feature"><div class="icon">⚽</div><strong>Fútbol 7, 9 y 11</strong><span>7 campos</span></div><div class="feature"><div class="icon">💡</div><strong>Iluminación</strong><span>Para jugar de noche</span></div><div class="feature"><div class="icon">🚿</div><strong>Vestuario</strong><span>Comodidad para tu equipo</span></div><div class="feature"><div class="icon">🛡️</div><strong>Seguridad</strong><span>Espacio deportivo</span></div><div class="feature"><div class="icon">🪑</div><strong>Zona de descanso</strong><span>Para acompañantes</span></div><div class="feature"><div class="icon">📶</div><strong>Conectividad</strong><span>Información por WhatsApp</span></div></div></div>
 
-<section id="nosotros"><div class="container about-grid"><div class="about-copy"><div class="section-kicker">NOSOTROS</div><h2>Tu cancha.<br>Tu partido.</h2><p>Campo Deportivo Túpac Amaru reúne 7 campos de diferentes medidas para partidos, entrenamientos, ligas y encuentros entre amigos.</p><p>Esta web está preparada para crecer contigo: podremos añadir precios, promociones, torneos, academias y disponibilidad real.</p><div class="mini-grid"><div class="mini"><b>4</b><span>Campos Fútbol 7</span></div><div class="mini"><b>2</b><span>Campos Fútbol 9</span></div><div class="mini"><b>1</b><span>Campo Fútbol 11</span></div></div></div><img class="about-photo" src="photos/field_d.jpg" alt="Instalaciones del Campo Deportivo Túpac Amaru"></div></section>
+<section id="nosotros"><div class="container about-grid"><div class="about-copy"><div class="section-kicker">NOSOTROS</div><h2>Tu cancha.<br>Tu partido.</h2><p>Campo Deportivo Túpac Amaru reúne 7 campos de diferentes medidas para partidos, entrenamientos, ligas y encuentros entre amigos.</p><p>Elige tu campo, revisa los horarios disponibles y confirma tu reserva por WhatsApp en pocos pasos.</p><div class="mini-grid"><div class="mini"><b>4</b><span>Campos Fútbol 7</span></div><div class="mini"><b>2</b><span>Campos Fútbol 9</span></div><div class="mini"><b>1</b><span>Campo Fútbol 11</span></div></div></div><img class="about-photo" src="photos/field_d.jpg" alt="Instalaciones del Campo Deportivo Túpac Amaru"></div></section>
 
 <section id="eventos"><div class="container"><div class="section-head"><div><div class="section-kicker">EVENTOS</div><h2>Alquila nuestros espacios</h2><p>También puedes consultar por el alquiler para campeonatos, torneos, cumpleaños, celebraciones y otras actividades.</p></div><a class="btn" href="https://wa.me/51953813533?text=Hola,%20quiero%20consultar%20por%20el%20alquiler%20del%20espacio%20para%20un%20evento." target="_blank" rel="noopener">Consultar por WhatsApp →</a></div><div class="info-grid"><div class="info"><h3>🏆 Campeonatos</h3><p>Organiza torneos y competencias deportivas.</p></div><div class="info"><h3>🎂 Cumpleaños</h3><p>Celebra con amigos y familiares en nuestro espacio deportivo.</p></div><div class="info"><h3>📣 Otros eventos</h3><p>Cuéntanos tu idea y revisamos fecha, horario y condiciones.</p></div></div></div></section>
 
-<section id="horarios" style="padding-top:20px"><div class="container"><div class="section-head"><div><div class="section-kicker">HORARIOS</div><h2>Consulta antes de reservar</h2><p>Selecciona una cancha y una fecha para ver qué turnos están disponibles. Los horarios se bloquean según el espacio físico que ocupa cada modalidad: Fútbol 11 ocupa todo el campo, Fútbol 9 ocupa dos Fútbol 7 y Fútbol 7 ocupa solo su propio espacio.</p></div></div><div class="info-grid"><div class="info"><h3>Fútbol 7</h3><p>Campos 1, 2, 3 y 4.<br>Horarios sujetos a disponibilidad.</p></div><div class="info"><h3>Fútbol 9</h3><p>Campos 5 y 6.<br>Horarios sujetos a disponibilidad.</p></div><div class="info"><h3>Fútbol 11</h3><p>Campo 7.<br>Horarios sujetos a disponibilidad.</p></div></div></div></section>
+<section id="horarios" style="padding-top:20px"><div class="container"><div class="section-head"><div><div class="section-kicker">HORARIOS</div><h2>Consulta antes de reservar</h2><p>Selecciona una cancha y una fecha para ver qué turnos están disponibles. Atendemos todos los días de 06:00 a 00:00 horas. Los horarios se bloquean según el espacio físico que ocupa cada modalidad: Fútbol 11 ocupa todo el campo, Fútbol 9 ocupa dos Fútbol 7 y Fútbol 7 ocupa solo su propio espacio.</p></div></div><div class="info-grid"><div class="info"><h3>Fútbol 7</h3><p>Campos 1, 2, 3 y 4.<br>Horarios sujetos a disponibilidad.</p></div><div class="info"><h3>Fútbol 9</h3><p>Campos 5 y 6.<br>Horarios sujetos a disponibilidad.</p></div><div class="info"><h3>Fútbol 11</h3><p>Campo 7.<br>Horarios sujetos a disponibilidad.</p></div></div></div></section>
 
 <section><div class="container"><div class="section-head"><div><div class="section-kicker">GALERÍA</div><h2>Conoce nuestras instalaciones</h2></div></div><div class="gallery"><img src="photos/field_c.jpg" alt="Cancha Túpac Amaru"><img src="photos/field_a.jpg" alt="Cancha Túpac Amaru"><img src="photos/field_b.jpg" alt="Cancha Túpac Amaru"><img src="photos/field_e.jpg" alt="Cancha Túpac Amaru"><img src="photos/field_f.jpg" alt="Cancha Túpac Amaru"></div></div></section>
 
-<section id="contacto" style="padding-top:20px"><div class="container"><div class="info-grid"><div class="info"><h3>📍 Ubicación</h3><p>Agregaremos aquí la dirección exacta y el enlace de Google Maps.</p><div class="map"></div></div><div class="info"><h3>📲 Reservas</h3><p>WhatsApp: <strong>953 813 533</strong></p><p>El botón enviará automáticamente el resumen de la reserva por WhatsApp.</p><a class="btn" href="#reserva">Ir a reservar</a></div><div class="info"><h3>📣 Redes sociales</h3><p>Facebook: Campo Deportivo Túpac Amaru.</p><p>Podemos añadir Instagram, TikTok y otros enlaces.</p></div></div></div></section>
+<section id="contacto" style="padding-top:20px"><div class="container"><div class="info-grid"><div class="info"><h3>📍 Ubicación</h3><p>Estadio Túpac Amaru – Villa María del Triunfo</p><a class="btn" href="https://www.google.com/maps/place/Estadio+T%C3%BApac+Amaru+villa+Mar%C3%ADa+del+triunfo/@-12.1677792,-76.953926,18.83z/data=!4m6!3m5!1s0x9105b90043592d77:0x1321fb3b9038b1f4!8m2!3d-12.1677541!4d-76.9543808!16s%2Fg%2F11zhblq029?entry=ttu" target="_blank" rel="noopener">🗺️ Cómo llegar</a></div><div class="info"><h3>📲 Reservas</h3><p>WhatsApp: <strong>953 813 533</strong></p><p>Al reservar, te enviamos el resumen de tu reserva por WhatsApp.</p><a class="btn" href="#reserva">Ir a reservar</a></div><div class="info"><h3>📣 Redes sociales</h3><p>Facebook: Campo Deportivo Túpac Amaru.</p><a class="btn" href="https://www.facebook.com/share/1Uw6QAqgYe/" target="_blank" rel="noopener">📘 Ver Facebook</a></div></div></div></section>
 </main>
 <footer><div class="container footer-grid"><div class="footer-brand"><img src="logo.png" alt="Logo"><span>Campo Deportivo Túpac Amaru<br><span class="muted">Deporte · Pasión · Comunidad</span></span></div><div class="muted">© <span id="year"></span> Campo Deportivo Túpac Amaru. Todos los derechos reservados.</div></div></footer>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="supabase-config.js"></script>
 <script>
 const WHATSAPP='51953813533';
-const slots=['06:00 - 06:30','06:30 - 07:00','07:00 - 07:30','07:30 - 08:00','08:00 - 08:30','08:30 - 09:00','09:00 - 09:30','09:30 - 10:00','10:00 - 10:30','10:30 - 11:00','11:00 - 11:30','11:30 - 12:00','12:00 - 12:30','12:30 - 13:00','13:00 - 13:30','13:30 - 14:00','14:00 - 14:30','14:30 - 15:00','15:00 - 15:30','15:30 - 16:00','16:00 - 16:30','16:30 - 17:00','17:00 - 17:30','17:30 - 18:00','18:00 - 18:30','18:30 - 19:00','19:00 - 19:30','19:30 - 20:00','20:00 - 20:30','20:30 - 21:00','21:00 - 21:30','21:30 - 22:00','22:00 - 22:30','22:30 - 23:00','23:00 - 23:30','23:30 - 00:00''];
+const slots=['06:00 - 06:30','06:30 - 07:00','07:00 - 07:30','07:30 - 08:00','08:00 - 08:30','08:30 - 09:00','09:00 - 09:30','09:30 - 10:00','10:00 - 10:30','10:30 - 11:00','11:00 - 11:30','11:30 - 12:00','12:00 - 12:30','12:30 - 13:00','13:00 - 13:30','13:30 - 14:00','14:00 - 14:30','14:30 - 15:00','15:00 - 15:30','15:30 - 16:00','16:00 - 16:30','16:30 - 17:00','17:00 - 17:30','17:30 - 18:00','18:00 - 18:30','18:30 - 19:00','19:00 - 19:30','19:30 - 20:00','20:00 - 20:30','20:30 - 21:00','21:00 - 21:30','21:30 - 22:00','22:00 - 22:30','22:30 - 23:00','23:00 - 23:30','23:30 - 00:00'];
 let selectedSlots=[];
 let onlineBookings=[];
 const STORAGE_KEY='tupac_amaru_reservas_v2';
@@ -108,15 +117,18 @@ async function loadOnlineBookings(){
   onlineBookings=data||[];
   renderTimes();
 }
+function reservationEndMinutes(r){
+  const start=timeToMinutes(r.start_time), end=timeToMinutes(r.end_time);
+  return end===0 && start>0 ? 1440 : end;
+}
 function isOnlineOccupiedForField(slot, f){
-  const start=slotStart(slot), end=slotEnd(slot);
+  const start=slotStart(slot), end=slotEnd(slot) || 1440;
   return onlineBookings.some(r=>{
     if(r.status==='cancelled') return false;
     const rf=normalizeField(r.field_type,r.field_number);
     if(!conflictsForField(f).includes(rf)) return false;
-    return timeToMinutes(r.start_time)>=start && timeToMinutes(r.start_time)<end
-      || timeToMinutes(r.end_time)>start && timeToMinutes(r.end_time)<=end
-      || (timeToMinutes(r.start_time)<=start && timeToMinutes(r.end_time)>=end);
+    const rs=timeToMinutes(r.start_time), re=reservationEndMinutes(r);
+    return rs<end && re>start;
   });
 }
 function isLocalOccupied(slot,f){
@@ -172,22 +184,17 @@ function updateSummary(){
  document.getElementById('summary').innerHTML=html;
 }
 async function saveReservationOnline(f,d){
-  if(!window.SUPABASE_URL || !window.SUPABASE_PUBLISHABLE_KEY) return {ok:false,error:new Error('Supabase no configurado')};
-  const type=f.split(' · ')[0], match=f.match(/Campo (\d+)/), number=match?Number(match[1]):NaN;
-  if(!type || !Number.isFinite(number)) return {ok:false,error:new Error('No se pudo identificar el campo seleccionado')};
-  const rows=selectedSlots.map(slot=>({customer_name:'Reserva web',customer_phone:'953813533',field_type:type,field_number:number,reservation_date:d,start_time:slot.split(' - ')[0]+':00',end_time:slot.split(' - ')[1]+':00',status:'pending'}));
-  const url=window.SUPABASE_URL+'/rest/v1/reservations';
-  try{
-    const response=await fetch(url,{method:'POST',headers:{'apikey':window.SUPABASE_PUBLISHABLE_KEY,'Authorization':'Bearer '+window.SUPABASE_PUBLISHABLE_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(rows)});
-    if(!response.ok){
-      let detail='HTTP '+response.status;
-      try{const body=await response.json();detail=body.message||body.details||body.hint||detail;}catch(e){}
-      return {ok:false,error:new Error(detail)};
-    }
-    return {ok:true,error:null};
-  }catch(e){
-    return {ok:false,error:new Error('No se pudo conectar con Supabase. Revisa tu conexión o vuelve a cargar la página.')};
-  }
+ if(!supabaseClient)return {ok:false,error:new Error('Supabase no configurado')};
+ const type=f.split(' · ')[0], match=f.match(/Campo (\d+)/), number=match?Number(match[1]):NaN;
+ if(!type || !Number.isFinite(number)) return {ok:false,error:new Error('No se pudo identificar el campo seleccionado')};
+ const rows=selectedSlots.map(slot=>({customer_name:'Reserva web',customer_phone:'953813533',field_type:type,field_number:number,reservation_date:d,start_time:slot.split(' - ')[0]+':00',end_time:(slot.split(' - ')[1]==='00:00'?'23:59:59':slot.split(' - ')[1]+':00'),status:'pending'}));
+ // Guardamos los bloques uno por uno. Así, si un bloque falla, podemos informar
+ // exactamente cuál fue rechazado y evitamos errores ambiguos en inserciones múltiples.
+ for(const row of rows){
+   const {error}=await supabaseClient.from('reservations').insert(row);
+   if(error) return {ok:false,error,row};
+ }
+ return {ok:true,error:null};
 }
 function saveLocalReservation(f,d){const bookings=getLocalBookings(),key=`${d}__${f}`;bookings[key]=bookings[key]||[];selectedSlots.forEach(slot=>{if(!bookings[key].includes(slot))bookings[key].push(slot)});localStorage.setItem(STORAGE_KEY,JSON.stringify(bookings));}
 async function reserveWhatsApp(){
@@ -214,12 +221,12 @@ async function reserveWhatsApp(){
  document.getElementById('confirmType').textContent=type;document.getElementById('confirmDate').textContent=dateLabel;document.getElementById('confirmTime').textContent=`${range} (${durationLabel})`;document.getElementById('confirmation').classList.add('show');await loadOnlineBookings();
 }
 document.getElementById('date').addEventListener('change',()=>{selectedSlots=[];loadOnlineBookings()});document.getElementById('field').addEventListener('change',()=>{selectedSlots=[];loadOnlineBookings()});document.getElementById('year').textContent=new Date().getFullYear();loadOnlineBookings();
+document.querySelectorAll('.navlinks a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('.navlinks').classList.remove('open')})});
+</script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
+}
 </script>
 </body></html>
-<div class="info">
-  <h3>📍 Ubicación</h3>
-  <p>Estadio Túpac Amaru – Villa María del Triunfo</p>
-  <a class="btn" href="https://www.google.com/maps/place/Estadio+T%C3%BApac+Amaru+villa+Mar%C3%ADa+del+triunfo/@-12.1677792,-76.953926,18.83z/data=!4m6!3m5!1s0x9105b90043592d77:0x1321fb3b9038b1f4!8m2!3d-12.1677541!4d-76.9543808!16s%2Fg%2F11zhblq029?entry=ttu" target="_blank" rel="noopener">
-    🗺️ Cómo llegar
-  </a>
-</div>
